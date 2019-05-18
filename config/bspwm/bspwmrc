@@ -16,8 +16,6 @@ done
 
 feh $HOME/Downloads/forest.jpg --bg-fill
 
-
-
 bspc config border_width         2
 bspc config window_gap          12
 
