@@ -15,6 +15,12 @@ endif
 " Bindings
 imap jj <ESC>
 
+" Pane Switching
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Misc
 set number ruler
 set expandtab tabstop=4 shiftwidth=4
