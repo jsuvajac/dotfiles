@@ -29,7 +29,7 @@ syntax enable
 " Theme
 let g:material_theme_style='palenight'
 set t_Co=256
-let g:airline_theme = 'material'
+" let g:airline_theme = 'material'
 set background=dark
 colorscheme material
 
