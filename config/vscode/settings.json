@@ -1,0 +1,45 @@
+{
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+
+    "workbench.colorTheme": "Material Theme Palenight",
+
+    "files.autoSave": "onFocusChange",
+    "editor.lineNumbers": "relative",
+
+    // Plugins
+    "glassit.alpha": 250,
+
+    // Vim plugins
+    "vim.useCtrlKeys": true,
+
+    "vim.incsearch": true,
+
+    "vim.surround": true,
+    // d s <existing char>	Delete existing surround
+    // c s <existing char> <desired char>	Change surround existing to desired
+    // y s <motion> <desired char>	Surround something with something using motion (as in "you surround")
+    // S <desired char>	Surround when in visual modes (surrounds full selection)
+
+    "vim.hlsearch": true,
+    // gc - toggles line comment. For example gcc to toggle line comment for current line and gc2j to toggle line comments for the current line and the next two lines.
+    // gC - toggles block comment. For example gCi) to comment out everything within parentheses.
+
+    // cii  -> python indetation level
+    
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-w>": false
+    }
+}
