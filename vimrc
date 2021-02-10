@@ -1,17 +1,3 @@
-" Plug
-call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree'
-Plug 'kaicataldo/material.vim'
-Plug 'vim-airline/vim-airline'
-call plug#end()
-
-" Truecolor
-if (has("termguicolors"))
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-    set termguicolors
-endif
-
 " Bindings
 imap jj <ESC>
 
@@ -22,16 +8,33 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " Misc
+syntax on
+set noerrorbells
+set nowrap
+set smartindent
 set number ruler
-set expandtab tabstop=4 shiftwidth=4
-syntax enable
 
-" Theme
-let g:material_theme_style='palenight'
-set t_Co=256
-" let g:airline_theme = 'material'
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+
+set relativenumber
+set nu
+set hidden
+
+set nohlsearch
+set incsearch
+
+set tabstop=4 shiftwidth=4
+
+call plug#begin('~/.vim/plugged')
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+call plug#end()
+
+colorscheme gruvbox
 set background=dark
-colorscheme material
 
-" NerdTree
-map <C-e> :NERDTreeToggle<CR>
