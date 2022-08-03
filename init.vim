@@ -33,14 +33,14 @@ call plug#begin()
 
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+	Plug 'OmniSharp/omnisharp-vim'
+	Plug 'preservim/nerdtree'
 
 	Plug 'hrsh7th/nvim-compe'
 	Plug 'airblade/vim-gitgutter'
 	" Plug 'Pocco81/AutoSave.nvim'
 	Plug 'tpope/vim-commentary'
 	Plug 'tpope/vim-surround'
-	Plug 'OmniSharp/omnisharp-vim'
-	Plug 'preservim/nerdtree'
 	Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
 
