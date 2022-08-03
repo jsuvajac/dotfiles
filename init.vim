@@ -34,7 +34,10 @@ call plug#begin()
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 	Plug 'OmniSharp/omnisharp-vim'
+
 	Plug 'preservim/nerdtree'
+	Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
+	Plug 'kyazdani42/nvim-tree.lua'
 
 	Plug 'hrsh7th/nvim-compe'
 	Plug 'airblade/vim-gitgutter'
